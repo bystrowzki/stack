@@ -9,14 +9,17 @@ class Stack:
         self.elements.append(data)
 
     def pop(self):
-        self.elements.pop()
-        return self.elements[-1]
+        pop = self.elements.pop()
+        return pop
 
     def peek(self):
         return self.elements[-1]
 
     def size(self):
         return len(self.elements)
+
+    def all_elements(self):
+        return self.elements
 
 
 stack = Stack()
